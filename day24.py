@@ -20,3 +20,12 @@ if idx == -1:
     print('검색값을 갖는 원소가 존재하지 않습니다.')
 else:
     print(f'검색값은 x[{idx}]에 있습니다.')
+
+
+t = (4,7,45,2)
+s = 'string'
+a = ['BTS','BLACKPINK',"AESPA"]
+
+print(f'{t}에서 45의 인덱스는 {seq_search.seq_search(t,45)}입니다.')
+print(f'{s}에서 n의 인덱스는 {seq_search.seq_search(s,"n")}입니다.')
+print(f'{a}에서 AESPA의 인덱스는 {seq_search.seq_search(a,"AESPA")}입니다.')
