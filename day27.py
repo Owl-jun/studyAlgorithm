@@ -16,8 +16,8 @@ def bin_search(a: Sequence, key: Any) -> int:
         pc = (pl + pr) // 2
         if a[pc] == key :
             return pc
-        elif a[pc] < key :
-            pl = pc + 1
+        elif a[pc] < key : # 센터키가 키값 보다 작을때
+            pl = pc + 1 # 초기값을 센터 +1 로 변경
         else:
             pr = pc - 1
         if pl > pr:
