@@ -12,7 +12,6 @@ def TodaySay(a):
 
 with open('test.txt', 'r') as f :
     test = f.readlines()
-    print(test)
     
 if __name__ == '__main__':
     print('지금, 당신에게 필요한 명언을 하나 내어드리겠습니다.')
