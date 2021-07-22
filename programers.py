@@ -1,7 +1,7 @@
 #
 
 n = 3
-text = ['abc','cde','exercize','expo','origin','normal','lack','korea','abd']
+text = ['abc','cde','exercize','expo','origin','normal','lack','korea','abc']
 
 def solution(n,text):
     bucket = []
