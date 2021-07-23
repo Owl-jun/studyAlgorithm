@@ -73,4 +73,32 @@ class ChainedHash:
         temp = Node(key, value, self.table[hash])
         self.table[hash] = temp
         return True
+    
+    def remove(self, key: Any) -> bool:
+        """키가 key인 원소를 삭제"""
+        hash = self.hash_value(key)
+        p = self.table[hash]
+        pp = None
         
+        while p is not None:
+            if p.key == key:
+                if pp is None:
+                    self.table[hash] = p.next
+                else:
+                    pp.next = p.next
+                return True
+            pp = p
+            p = p.next
+        return False
+
+    def dump(self) -> None:
+        """해시 테이블을 덤프"""
+        for i in range(self.capacity):
+            p = self.table[i]
+            print(i, end='')
+            while p is not None:
+                print(f'  ->{p.key} ({p.value})', end= '')
+                p = p.next
+            print()
+
+a = ChainedHash(10)
