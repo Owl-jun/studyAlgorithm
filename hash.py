@@ -102,3 +102,4 @@ class ChainedHash:
             print()
 
 a = ChainedHash(10)
+
