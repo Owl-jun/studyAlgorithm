@@ -12,10 +12,10 @@ completion = ['b','c']
 participant2 = ['a','b','b','c']
 completion2 = ['a','b','c']
 
-participant3 = ['a'.'b','c','d']
+participant3 = ['a','b','c','d']
 completion3 = ['a','b','c']
 print(solution(participant, completion))
 print(solution(participant2, completion2))
+print(solution(participant3, completion3))
 
-
-# ORGIN dok
+# ORIGIN dok
