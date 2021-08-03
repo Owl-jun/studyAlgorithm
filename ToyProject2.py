@@ -7,7 +7,7 @@ def TodaySay(a):
     tm = time.localtime()
     ts = time.strftime('%Y-%m-%d', tm)
     select = random.randint(0,len(a)-1)
-    return f'{ts} {a[select]}'
+    return f'오늘 날짜 : {ts} {a[select]} 오늘 하루도 화이팅입니다!'
 
 
 with open('test.txt', 'r') as f :
