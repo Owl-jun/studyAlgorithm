@@ -13,7 +13,7 @@ def test_function(entry):
 
 
 def get_weather(city):
-    weather_key = '113aeafd3b6a69c6bb9b955f99066b73'
+    weather_key = ''
     url = 'http://api.openweathermap.org/data/2.5/weather'
     params = {'APPID': weather_key, 'q':city, 'units':'Metric'}
     response = requests.get(url, params = params)
@@ -23,7 +23,7 @@ def get_weather(city):
 
 def format_response(weather):
     try:
-        name = weather['name']
+        name = weather['부산']
         dec = weather['weather'][0]['description']
         temper= weather['main']['temp']
 
